@@ -28,7 +28,7 @@
   "dependencies": {
     "pug-code-gen": "^2.0.2",
     "pug-filters": "^3.1.1",
-    "pug-lexer": "^4.1.0",
+    "pug-lexer": "^5.0.0",
     "pug-linker": "^3.0.6",
     "pug-load": "^2.0.12",
     "pug-parser": "^5.0.1",
