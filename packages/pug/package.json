@@ -45,7 +45,7 @@
     "jstransformer-verbatim": "^1.0.0",
     "mkdirp": "^0.5.1",
     "rimraf": "^3.0.2",
-    "uglify-js": "github:mishoo/UglifyJS2#1c15d0db456ce32f1b9b507aad97e5ee5c8285f7"
+    "uglify-js": "github:mishoo/UglifyJS2#f0ca9cfbe65efc919149e7cd74cedd186d6413ee"
   },
   "files": [
     "lib/index.js",

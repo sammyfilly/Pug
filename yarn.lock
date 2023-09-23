@@ -736,11 +736,6 @@ assign-symbols@^1.0.0:
   resolved "https://registry.yarnpkg.com/assign-symbols/-/assign-symbols-1.0.0.tgz#59667f41fadd4f20ccbc2bb96b8d4f7f78ec0367"
   integrity sha1-WWZ/QfrdTyDMvCu5a41Pf3jsA2c=
 
-async@~0.2.6:
-  version "0.2.10"
-  resolved "https://registry.yarnpkg.com/async/-/async-0.2.10.tgz#b6bbe0b0674b9d719708ca38de8c237cb526c3d1"
-  integrity sha1-trvgsGdLnXGXCMo43owjfLUmw9E=
-
 asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
@@ -4059,14 +4054,10 @@ uglify-js@^2.6.1, uglify-js@^2.8.10:
   optionalDependencies:
     uglify-to-browserify "~1.0.0"
 
-"uglify-js@github:mishoo/UglifyJS2#1c15d0db456ce32f1b9b507aad97e5ee5c8285f7":
-  version "2.7.3"
-  resolved "https://codeload.github.com/mishoo/UglifyJS2/tar.gz/1c15d0db456ce32f1b9b507aad97e5ee5c8285f7"
-  dependencies:
-    async "~0.2.6"
-    source-map "~0.5.1"
-    uglify-to-browserify "~1.0.0"
-    yargs "~3.10.0"
+"uglify-js@github:mishoo/UglifyJS2#f0ca9cfbe65efc919149e7cd74cedd186d6413ee":
+  version "3.17.4"
+  uid f0ca9cfbe65efc919149e7cd74cedd186d6413ee
+  resolved "https://codeload.github.com/mishoo/UglifyJS2/tar.gz/f0ca9cfbe65efc919149e7cd74cedd186d6413ee"
 
 uglify-to-browserify@~1.0.0:
   version "1.0.2"
