@@ -19357,12 +19357,12 @@ Array [
     "loc": Object {
       "end": Object {
         "column": 1,
-        "line": 44,
+        "line": 45,
       },
       "filename": "<basedir>/packages/pug-lexer/test/cases/each.else.pug",
       "start": Object {
         "column": 1,
-        "line": 44,
+        "line": 45,
       },
     },
     "type": "outdent",
@@ -19371,12 +19371,151 @@ Array [
     "loc": Object {
       "end": Object {
         "column": 1,
-        "line": 44,
+        "line": 45,
       },
       "filename": "<basedir>/packages/pug-lexer/test/cases/each.else.pug",
       "start": Object {
         "column": 1,
-        "line": 44,
+        "line": 45,
+      },
+    },
+    "type": "outdent",
+  },
+  Object {
+    "buffer": false,
+    "loc": Object {
+      "end": Object {
+        "column": 74,
+        "line": 45,
+      },
+      "filename": "<basedir>/packages/pug-lexer/test/cases/each.else.pug",
+      "start": Object {
+        "column": 1,
+        "line": 45,
+      },
+    },
+    "mustEscape": false,
+    "type": "code",
+    "val": "var ofKeyword = [{ name: 'tobi', friends: ['loki'] }, { name: 'loki' }]",
+  },
+  Object {
+    "loc": Object {
+      "end": Object {
+        "column": 1,
+        "line": 46,
+      },
+      "filename": "<basedir>/packages/pug-lexer/test/cases/each.else.pug",
+      "start": Object {
+        "column": 1,
+        "line": 46,
+      },
+    },
+    "type": "newline",
+  },
+  Object {
+    "loc": Object {
+      "end": Object {
+        "column": 3,
+        "line": 46,
+      },
+      "filename": "<basedir>/packages/pug-lexer/test/cases/each.else.pug",
+      "start": Object {
+        "column": 1,
+        "line": 46,
+      },
+    },
+    "type": "tag",
+    "val": "ul",
+  },
+  Object {
+    "loc": Object {
+      "end": Object {
+        "column": 3,
+        "line": 47,
+      },
+      "filename": "<basedir>/packages/pug-lexer/test/cases/each.else.pug",
+      "start": Object {
+        "column": 1,
+        "line": 47,
+      },
+    },
+    "type": "indent",
+    "val": 2,
+  },
+  Object {
+    "code": "ofKeyword",
+    "loc": Object {
+      "end": Object {
+        "column": 24,
+        "line": 47,
+      },
+      "filename": "<basedir>/packages/pug-lexer/test/cases/each.else.pug",
+      "start": Object {
+        "column": 3,
+        "line": 47,
+      },
+    },
+    "type": "eachOf",
+    "val": "val",
+    "value": "val",
+  },
+  Object {
+    "loc": Object {
+      "end": Object {
+        "column": 5,
+        "line": 48,
+      },
+      "filename": "<basedir>/packages/pug-lexer/test/cases/each.else.pug",
+      "start": Object {
+        "column": 1,
+        "line": 48,
+      },
+    },
+    "type": "indent",
+    "val": 4,
+  },
+  Object {
+    "loc": Object {
+      "end": Object {
+        "column": 7,
+        "line": 48,
+      },
+      "filename": "<basedir>/packages/pug-lexer/test/cases/each.else.pug",
+      "start": Object {
+        "column": 5,
+        "line": 48,
+      },
+    },
+    "type": "tag",
+    "val": "li",
+  },
+  Object {
+    "buffer": true,
+    "loc": Object {
+      "end": Object {
+        "column": 18,
+        "line": 48,
+      },
+      "filename": "<basedir>/packages/pug-lexer/test/cases/each.else.pug",
+      "start": Object {
+        "column": 7,
+        "line": 48,
+      },
+    },
+    "mustEscape": true,
+    "type": "code",
+    "val": "user.name",
+  },
+  Object {
+    "loc": Object {
+      "end": Object {
+        "column": 1,
+        "line": 50,
+      },
+      "filename": "<basedir>/packages/pug-lexer/test/cases/each.else.pug",
+      "start": Object {
+        "column": 1,
+        "line": 50,
       },
     },
     "type": "outdent",
@@ -19385,12 +19524,148 @@ Array [
     "loc": Object {
       "end": Object {
         "column": 1,
-        "line": 44,
+        "line": 50,
       },
       "filename": "<basedir>/packages/pug-lexer/test/cases/each.else.pug",
       "start": Object {
         "column": 1,
-        "line": 44,
+        "line": 50,
+      },
+    },
+    "type": "outdent",
+  },
+  Object {
+    "loc": Object {
+      "end": Object {
+        "column": 3,
+        "line": 50,
+      },
+      "filename": "<basedir>/packages/pug-lexer/test/cases/each.else.pug",
+      "start": Object {
+        "column": 1,
+        "line": 50,
+      },
+    },
+    "type": "tag",
+    "val": "ul",
+  },
+  Object {
+    "loc": Object {
+      "end": Object {
+        "column": 3,
+        "line": 51,
+      },
+      "filename": "<basedir>/packages/pug-lexer/test/cases/each.else.pug",
+      "start": Object {
+        "column": 1,
+        "line": 51,
+      },
+    },
+    "type": "indent",
+    "val": 2,
+  },
+  Object {
+    "code": "[\\"variable with of keyword\\"]",
+    "loc": Object {
+      "end": Object {
+        "column": 43,
+        "line": 51,
+      },
+      "filename": "<basedir>/packages/pug-lexer/test/cases/each.else.pug",
+      "start": Object {
+        "column": 3,
+        "line": 51,
+      },
+    },
+    "type": "eachOf",
+    "val": "val",
+    "value": "val",
+  },
+  Object {
+    "loc": Object {
+      "end": Object {
+        "column": 5,
+        "line": 52,
+      },
+      "filename": "<basedir>/packages/pug-lexer/test/cases/each.else.pug",
+      "start": Object {
+        "column": 1,
+        "line": 52,
+      },
+    },
+    "type": "indent",
+    "val": 4,
+  },
+  Object {
+    "loc": Object {
+      "end": Object {
+        "column": 7,
+        "line": 52,
+      },
+      "filename": "<basedir>/packages/pug-lexer/test/cases/each.else.pug",
+      "start": Object {
+        "column": 5,
+        "line": 52,
+      },
+    },
+    "type": "tag",
+    "val": "li",
+  },
+  Object {
+    "buffer": true,
+    "loc": Object {
+      "end": Object {
+        "column": 12,
+        "line": 52,
+      },
+      "filename": "<basedir>/packages/pug-lexer/test/cases/each.else.pug",
+      "start": Object {
+        "column": 7,
+        "line": 52,
+      },
+    },
+    "mustEscape": true,
+    "type": "code",
+    "val": "val",
+  },
+  Object {
+    "loc": Object {
+      "end": Object {
+        "column": 12,
+        "line": 52,
+      },
+      "filename": "<basedir>/packages/pug-lexer/test/cases/each.else.pug",
+      "start": Object {
+        "column": 12,
+        "line": 52,
+      },
+    },
+    "type": "outdent",
+  },
+  Object {
+    "loc": Object {
+      "end": Object {
+        "column": 12,
+        "line": 52,
+      },
+      "filename": "<basedir>/packages/pug-lexer/test/cases/each.else.pug",
+      "start": Object {
+        "column": 12,
+        "line": 52,
+      },
+    },
+    "type": "outdent",
+  },
+  Object {
+    "loc": Object {
+      "end": Object {
+        "column": 12,
+        "line": 52,
+      },
+      "filename": "<basedir>/packages/pug-lexer/test/cases/each.else.pug",
+      "start": Object {
+        "column": 12,
+        "line": 52,
       },
     },
     "type": "eos",
@@ -31703,30 +31978,16 @@ Array [
 exports[`interpolation.escape.pug 1`] = `
 Array [
   Object {
-    "loc": Object {
-      "end": Object {
-        "column": 1,
-        "line": 2,
-      },
-      "filename": "<basedir>/packages/pug-lexer/test/cases/interpolation.escape.pug",
-      "start": Object {
-        "column": 1,
-        "line": 2,
-      },
-    },
-    "type": "newline",
-  },
-  Object {
     "buffer": false,
     "loc": Object {
       "end": Object {
         "column": 15,
-        "line": 2,
+        "line": 1,
       },
       "filename": "<basedir>/packages/pug-lexer/test/cases/interpolation.escape.pug",
       "start": Object {
         "column": 1,
-        "line": 2,
+        "line": 1,
       },
     },
     "mustEscape": false,
@@ -31737,12 +31998,12 @@ Array [
     "loc": Object {
       "end": Object {
         "column": 1,
-        "line": 3,
+        "line": 2,
       },
       "filename": "<basedir>/packages/pug-lexer/test/cases/interpolation.escape.pug",
       "start": Object {
         "column": 1,
-        "line": 3,
+        "line": 2,
       },
     },
     "type": "newline",
@@ -31751,6 +32012,21 @@ Array [
     "loc": Object {
       "end": Object {
         "column": 4,
+        "line": 2,
+      },
+      "filename": "<basedir>/packages/pug-lexer/test/cases/interpolation.escape.pug",
+      "start": Object {
+        "column": 1,
+        "line": 2,
+      },
+    },
+    "type": "tag",
+    "val": "foo",
+  },
+  Object {
+    "loc": Object {
+      "end": Object {
+        "column": 3,
         "line": 3,
       },
       "filename": "<basedir>/packages/pug-lexer/test/cases/interpolation.escape.pug",
@@ -31759,8 +32035,23 @@ Array [
         "line": 3,
       },
     },
-    "type": "tag",
-    "val": "foo",
+    "type": "indent",
+    "val": 2,
+  },
+  Object {
+    "loc": Object {
+      "end": Object {
+        "column": 9,
+        "line": 3,
+      },
+      "filename": "<basedir>/packages/pug-lexer/test/cases/interpolation.escape.pug",
+      "start": Object {
+        "column": 5,
+        "line": 3,
+      },
+    },
+    "type": "text",
+    "val": "some",
   },
   Object {
     "loc": Object {
@@ -31774,13 +32065,12 @@ Array [
         "line": 4,
       },
     },
-    "type": "indent",
-    "val": 2,
+    "type": "newline",
   },
   Object {
     "loc": Object {
       "end": Object {
-        "column": 9,
+        "column": 13,
         "line": 4,
       },
       "filename": "<basedir>/packages/pug-lexer/test/cases/interpolation.escape.pug",
@@ -31790,7 +32080,7 @@ Array [
       },
     },
     "type": "text",
-    "val": "some",
+    "val": "#{text}",
   },
   Object {
     "loc": Object {
@@ -31819,7 +32109,7 @@ Array [
       },
     },
     "type": "text",
-    "val": "#{text}",
+    "val": "!{here}",
   },
   Object {
     "loc": Object {
@@ -31831,35 +32121,6 @@ Array [
       "start": Object {
         "column": 1,
         "line": 6,
-      },
-    },
-    "type": "newline",
-  },
-  Object {
-    "loc": Object {
-      "end": Object {
-        "column": 9,
-        "line": 6,
-      },
-      "filename": "<basedir>/packages/pug-lexer/test/cases/interpolation.escape.pug",
-      "start": Object {
-        "column": 5,
-        "line": 6,
-      },
-    },
-    "type": "text",
-    "val": "here",
-  },
-  Object {
-    "loc": Object {
-      "end": Object {
-        "column": 3,
-        "line": 7,
-      },
-      "filename": "<basedir>/packages/pug-lexer/test/cases/interpolation.escape.pug",
-      "start": Object {
-        "column": 1,
-        "line": 7,
       },
     },
     "type": "newline",
@@ -31868,12 +32129,12 @@ Array [
     "loc": Object {
       "end": Object {
         "column": 11,
-        "line": 7,
+        "line": 6,
       },
       "filename": "<basedir>/packages/pug-lexer/test/cases/interpolation.escape.pug",
       "start": Object {
         "column": 5,
-        "line": 7,
+        "line": 6,
       },
     },
     "type": "text",
@@ -31975,12 +32236,12 @@ Array [
     "loc": Object {
       "end": Object {
         "column": 31,
-        "line": 7,
+        "line": 6,
       },
       "filename": "<basedir>/packages/pug-lexer/test/cases/interpolation.escape.pug",
       "start": Object {
         "column": 11,
-        "line": 7,
+        "line": 6,
       },
     },
     "mustEscape": true,
@@ -31990,12 +32251,12 @@ Array [
   Object {
     "loc": Object {
       "end": Object {
-        "column": 31,
+        "column": 1,
         "line": 7,
       },
       "filename": "<basedir>/packages/pug-lexer/test/cases/interpolation.escape.pug",
       "start": Object {
-        "column": 31,
+        "column": 1,
         "line": 7,
       },
     },
@@ -32004,12 +32265,12 @@ Array [
   Object {
     "loc": Object {
       "end": Object {
-        "column": 31,
+        "column": 1,
         "line": 7,
       },
       "filename": "<basedir>/packages/pug-lexer/test/cases/interpolation.escape.pug",
       "start": Object {
-        "column": 31,
+        "column": 1,
         "line": 7,
       },
     },

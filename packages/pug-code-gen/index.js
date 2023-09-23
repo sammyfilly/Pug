@@ -79,6 +79,11 @@ function Compiler(node, options) {
   if (this.pp && typeof this.pp !== 'string') {
     this.pp = '  ';
   }
+  if (this.pp && !/^\s+$/.test(this.pp)) {
+    throw new Error(
+      'The pretty parameter should either be a boolean or whitespace only string'
+    );
+  }
   this.debug = false !== options.compileDebug;
   this.indents = 0;
   this.parentIndents = 0;
@@ -712,6 +717,7 @@ Compiler.prototype = {
    */
 
   visitMixinBlock: function(block) {
+ babel
     var ast = [];
     if (this.pp) {
       ast.push(
@@ -743,6 +749,13 @@ Compiler.prototype = {
             []
           )
         )
+
+    if (this.pp)
+      this.buf.push(
+        'pug_indent.push(' +
+          stringify(Array(this.indents + 1).join(this.pp)) +
+          ');'
+        master
       );
     }
     return ast;
@@ -801,6 +814,7 @@ Compiler.prototype = {
     // mixin invocation
     if (mixin.call) {
       this.mixins[key].used = true;
+ babel
       if (pp) {
         ast.push(
           t.expressionStatement(
@@ -812,6 +826,13 @@ Compiler.prototype = {
               [t.stringLiteral(Array(this.indents + 1).join(pp))]
             )
           )
+
+      if (pp)
+        this.buf.push(
+          'pug_indent.push(' +
+            stringify(Array(this.indents + 1).join(pp)) +
+            ');'
+master
         );
       }
       if (block || attrs.length || attrsBlocks.length) {

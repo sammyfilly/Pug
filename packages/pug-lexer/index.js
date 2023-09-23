@@ -96,7 +96,7 @@ Lexer.prototype = {
   assertNestingCorrect: function(exp) {
     //this verifies that code is properly nested, but allows
     //invalid JavaScript such as the contents of `attributes`
-    var res = characterParser(exp);
+    var res = characterParser.default(exp);
     if (res.isNesting()) {
       this.error(
         'INCORRECT_NESTING',
@@ -246,7 +246,7 @@ Lexer.prototype = {
       start === '(' || start === '{' || start === '[',
       'The start character should be "(", "{" or "["'
     );
-    var end = characterParser.BRACKETS[start];
+    var end = {'(': ')', '{': '}', '[': ']'}[start];
     var range;
     try {
       range = characterParser.parseUntil(this.input, end, {start: skip + 1});
@@ -543,6 +543,7 @@ Lexer.prototype = {
         interpolated: true,
         startingLine: this.lineno,
         startingColumn: this.colno,
+        plugins: this.plugins,
       });
       var interpolated;
       try {
@@ -577,7 +578,11 @@ Lexer.prototype = {
     }
     if (indexOfStringInterp !== Infinity) {
       if (matchOfStringInterp[1]) {
-        prefix = prefix + value.substring(0, indexOfStringInterp) + '#{';
+        prefix =
+          prefix +
+          value.substring(0, indexOfStringInterp) +
+          matchOfStringInterp[2] +
+          '{';
         return this.addText(
           type,
           value.substring(indexOfStringInterp + 3),
@@ -866,7 +871,7 @@ Lexer.prototype = {
   when: function() {
     var tok = this.scanEndOfLine(/^when +([^:\n]+)/, 'when');
     if (tok) {
-      var parser = characterParser(tok.val);
+      var parser = characterParser.default(tok.val);
       while (parser.isNesting() || parser.isString()) {
         var rest = /:([^:\n]+)/.exec(this.input);
         if (!rest) break;
@@ -874,7 +879,7 @@ Lexer.prototype = {
         tok.val += rest[0];
         this.consume(rest[0].length);
         this.incrementColumn(rest[0].length);
-        parser = characterParser(tok.val);
+        parser = characterParser.default(tok.val);
       }
 
       this.incrementColumn(-tok.val.length);
@@ -1080,7 +1085,7 @@ Lexer.prototype = {
 
   eachOf: function() {
     var captures;
-    if ((captures = /^(?:each|for) (.*) of *([^\n]+)/.exec(this.input))) {
+    if ((captures = /^(?:each|for) (.*?) of *([^\n]+)/.exec(this.input))) {
       this.consume(captures[0].length);
       var tok = this.tok('eachOf', captures[1]);
       tok.value = captures[1];
