@@ -12,7 +12,7 @@
   "devDependencies": {
     "pug-lexer": "^4.1.0",
     "pug-load": "^2.0.12",
-    "pug-parser": "^5.0.1"
+    "pug-parser": "^6.0.0"
   },
   "files": [
     "index.js"
